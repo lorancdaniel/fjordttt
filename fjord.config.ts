@@ -1,6 +1,6 @@
 const fjord: FjordProps = {
-  site_name: "Fjord", // site name: used in the header and footer
-  site_domain: "https://fjord.dev", // site domain: used in the sitemap
+  site_name: "Portale randkowe", // site name: used in the header and footer
+  site_domain: "https://portale-randkowe.com", // site domain: used in the sitemap
   site_title:
     "Fjord | Opinionated Next JS and Wordpress Starter by Alpine Codex",
   site_description:
