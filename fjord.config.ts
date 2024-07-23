@@ -1,14 +1,19 @@
 const fjord: FjordProps = {
   site_name: "Portale randkowe", // site name: used in the header and footer
   site_domain: "https://portale-randkowe.com", // site domain: used in the sitemap
-  site_title:
-    "Fjord | Opinionated Next JS and Wordpress Starter by Alpine Codex",
+  site_title: "Portale-randkowe | Twój przewodnik po świecie randek online",
   site_description:
-    "Fjord is an opinionated Next JS and Wordpress starter. It's built to be a solid foundation for your next project.",
-  keywords: ["Next.js", "React", "JavaScript"],
-  authors: [{ name: "9d8", url: "https://9d8.dev" }],
+    "Portale-randkowe.com to najlepsze miejsce, aby rozpocząć swoją przygodę z randkami online. Znajdź swoją drugą połówkę już dziś!",
+  keywords: [
+    "randki online",
+    "portal randkowy",
+    "miłość",
+    "związek",
+    "portale randkowe",
+  ],
+  authors: [{ name: "Amorek", url: "https://portale-randkowe.com/o-nas" }],
   posts_per_page: 9,
-  wordpress_url: "https://windpress.wpenginepowered.com",
+  wordpress_url: " https://h22.seohost.pl/~srv40338/headlesswp/",
   google_analytics_id: "G-7VM8KZENP7",
 
   logo: "../logo.svg",
@@ -19,21 +24,21 @@ const fjord: FjordProps = {
   menu: {
     main: {
       home: "/", // Don't Change
-      blog: "/posts", // default is `/posts`
-      about: "/about", // you can remove this if you don't want an about page
-      contact: "/contact", // you can remove this if you don't want a contact page
+      blog: "/posty", // default is `/posts`
+      about: "/o-nas", // you can remove this if you don't want an about page
+      contact: "/kontakt", // you can remove this if you don't want a contact page
     },
     content: {
-      authors: "/posts/authors", // default is `/posts/authors`
-      categories: "/posts/categories", // default is `/posts/categories`
-      tags: "/posts/tags", // default is `/posts/tags`
+      authors: "/posty/autorzy", // default is `/posts/authors`
+      categories: "/posts/kategorie", // default is `/posts/categories`
+      tags: "/posts/tagi", // default is `/posts/tags`
       pages: "/all", // default is `/all`
     },
     legal: {
-      privacy_policy: "/privacy-policy", // default is `/privacy-policy`
-      privacy_policy_text: "Privacy Policy", // default is `Privacy Policy`
-      terms_of_service: "/terms-of-service", // default is `/terms-of-service`
-      terms_of_service_text: "Terms of Service", // default is `Terms of Service`
+      privacy_policy: "/polityka-prywatnosci", // default is `/privacy-policy`
+      privacy_policy_text: "Polityka Prywatności", // default is `Privacy Policy`
+      terms_of_service: "/regulamin", // default is `/terms-of-service`
+      terms_of_service_text: "Regulamin", // default is `Terms of Service`
     },
     cta: "https://github.com/9d8dev/fjord", // Link to CTA
   },
