@@ -1,7 +1,6 @@
 import * as Craft from "@/components/craft/layout";
 import Balancer from "react-wrap-balancer";
 import Hero from "@/components/sections/hero";
-import CTA from "@/components/sections/cta";
 
 export default function Home() {
   return (
@@ -53,8 +52,6 @@ export default function Home() {
           </blockquote>
         </Craft.Container>
       </Craft.Section>
-
-      <CTA />
     </Craft.Main>
   );
 }

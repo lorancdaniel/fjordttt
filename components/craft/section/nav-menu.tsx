@@ -34,12 +34,13 @@ export function NavMenu() {
                     <div className="mb-2 mt-4 text-lg font-medium">
                       {fjord.site_name}
                     </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
+                    <p className="text-sm leading-tight -muted-foreground">
                       {fjord.site_description}
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
+
               {fjord.directory_menu.items.map((component) => (
                 <ListItem
                   key={component.title}

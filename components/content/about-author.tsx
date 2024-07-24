@@ -7,10 +7,10 @@ const AboutAuthor = ({ author }: ArticleProps) => {
       <img
         className="w-24 h-24 rounded-full"
         src={author.avatar_urls?.[96]}
-        alt={`profile icon of ${author.name}`}
+        alt={`ikona profilowa autora ${author.name}`}
       />
       <div className="grid gap-2 py-4">
-        <p className="text-xs opacity-70">About the Author</p>
+        <p className="text-xs opacity-70">O Autorze</p>
         <Link
           className="block text-2xl hover:opacity-70 transition-all"
           href={`/posts/authors/${author.slug}`}

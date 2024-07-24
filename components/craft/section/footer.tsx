@@ -13,10 +13,9 @@ import Link from "next/link";
 // Utility Imports
 import Logo from "@/public/logo.svg";
 import Balancer from "react-wrap-balancer";
-import { Github, Twitter } from "lucide-react";
+import { Twitter } from "lucide-react";
 
-const github_link = "https://github.com/9d8dev/fjord";
-const x_link = "https://x.com/bridgertower";
+const x_link = "/";
 
 const Footer = () => {
   return (
@@ -25,26 +24,15 @@ const Footer = () => {
         <Craft.Container className="grid gap-6 md:grid-cols-2">
           <div className="grid gap-6">
             <Link href="/">
-              <h3 className="sr-only">Craft UI</h3>
-              <Image src={Logo} alt="Logo" width={100} height={50}></Image>
+              <h3 className="sr-only">Portale-randkowe.com</h3>
+              <Image src={Logo} alt="Logo" width={200} height={100}></Image>
             </Link>
             <p>
-              <Balancer>
-                Craft UI is a design system and component library for building
-                NextJS Websites. Created by{" "}
-                <a href="https://bridger.to">Bridger Tower</a> and{" "}
-                <a href="https://cameronyoungblood.com">Cameron Youngblood</a>.
-              </Balancer>
+              <Balancer>text,text,text</Balancer>
             </p>
 
             <div className="flex gap-2">
               <ModeToggle />
-              <Button variant="outline" asChild size="icon">
-                <Link href={github_link}>
-                  <Github className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
-                  <span className="sr-only">Visit Github</span>
-                </Link>
-              </Button>
               <Button variant="outline" asChild size="icon">
                 <Link href={x_link}>
                   <Twitter className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
@@ -52,9 +40,6 @@ const Footer = () => {
                 </Link>
               </Button>
             </div>
-            <p className="text-muted-foreground hidden sm:block">
-              Code © <a href="https://9d8.dev">9d8</a>. 2023-present.
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 sm:gap-0">

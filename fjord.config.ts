@@ -30,8 +30,8 @@ const fjord: FjordProps = {
     },
     content: {
       authors: "/posty/autorzy", // default is `/posts/authors`
-      categories: "/posts/kategorie", // default is `/posts/categories`
-      tags: "/posts/tagi", // default is `/posts/tags`
+      categories: "/posty/kategorie", // default is `/posts/categories`
+      tags: "/posty/tagi", // default is `/posts/tags`
       pages: "/all", // default is `/all`
     },
     legal: {
@@ -40,57 +40,71 @@ const fjord: FjordProps = {
       terms_of_service: "/regulamin", // default is `/terms-of-service`
       terms_of_service_text: "Regulamin", // default is `Terms of Service`
     },
-    cta: "https://github.com/9d8dev/fjord", // Link to CTA
+    cta: "https://github.com/lorancdan", // Link to CTA
   },
 
   nav_menu: {
-    title: "Pages",
+    title: "Strony",
     items: [
       {
-        title: "About",
-        href: "/about",
+        title: "O nas",
+        href: "/o-nas",
         description:
-          "Learn more about Fjord and how to use it for your next project.",
+          "Poznaj naszą historię, misję i zespół. Dowiedz się, jak możemy Ci pomóc w znalezieniu miłości.",
       },
       {
-        title: "Contact",
-        href: "/contact",
+        title: "Kontakt",
+        href: "/kontakt",
         description:
-          "Get in touch with us if you have any questions or feedback. We would love to hear from you.",
+          "Masz pytania lub sugestie? Skontaktuj się z nami! Chętnie pomożemy i odpowiemy na Twoje wiadomości.",
       },
       {
-        title: "All Pages",
-        href: "/all",
-        description: "A list of all the pages on this site.",
+        title: "Wszystkie strony",
+        href: "/wszystkie-strony",
+        description:
+          "Przeglądaj wszystkie strony naszego portalu i znajdź dokładnie to, czego szukasz.",
       },
       {
-        title: "Authors",
-        href: "/posts/authors",
-        description: "A list of all the authors on this site.",
+        title: "Autorzy",
+        href: "/posty/autorzy",
+        description:
+          "Poznaj naszych ekspertów ds. randek i związków. Czytaj artykuły i poradniki, które pomogą Ci znaleźć miłość.",
       },
     ],
   },
 
   directory_menu: {
-    title: "Learn Fjord",
+    title: "Zacznij tutaj",
     items: [
       {
-        title: "Documentation",
-        href: "https://github.com/9d8dev/fjord",
+        title: "Darmowe portale randkowe",
+        href: "/darmowe-portal-randkowe",
         description:
-          "Styles for headings, paragraphs, lists, and other inline elements.",
+          "Znajdź miłość bez wydawania ani grosza! Odkryj najlepsze darmowe portale randkowe i poznaj tysiące singli online.",
       },
       {
-        title: "Layout Components",
-        href: "https://github.com/9d8dev/fjord",
+        title: "Ranking portali randkowych",
+        href: "/ranking-portali-randkowych",
         description:
-          "Components that help you lay out your content, like Main, Craft.Section, and Craft.Container.",
+          "Nie wiesz, który portal wybrać? Sprawdź nasz ranking najlepszych portali randkowych i znajdź idealne miejsce dla siebie.",
       },
       {
-        title: "Navigation",
-        href: "https://github.com/9d8dev/craft/wiki/components#nav-component",
+        title: "Portale randkowe dla dorosłych",
+        href: "/portale-randkowe-dla-doroslych",
         description:
-          "A Navigation component that helps you build accessible navigation menus.",
+          "Szukasz dojrzałych randek i poważnych związków? Poznaj najlepsze portale randkowe dla dorosłych i ciesz się intymnością.",
+      },
+      {
+        title: "Ranking darmowych serwisów randkowych",
+        href: "/ranking-darmowych-serwisow-randkowych",
+        description:
+          "Które darmowe serwisy randkowe są warte uwagi? Sprawdź nasz ranking i znajdź miłość bez płacenia abonamentu.",
+      },
+      {
+        title: "Serwisy randkowe - opinie",
+        href: "/serwisy-randkowe-opinie",
+        description:
+          "Zanim się zarejestrujesz, sprawdź opinie innych użytkowników! Poznaj wady i zalety popularnych serwisów randkowych.",
       },
     ],
   },
