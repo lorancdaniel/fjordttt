@@ -78,7 +78,7 @@ const fjord: FjordProps = {
     items: [
       {
         title: "Darmowe portale randkowe",
-        href: "/darmowe-portal-randkowe",
+        href: "/darmowe-portale-randkowe",
         description:
           "Znajdź miłość bez wydawania ani grosza! Odkryj najlepsze darmowe portale randkowe i poznaj tysiące singli online.",
       },
