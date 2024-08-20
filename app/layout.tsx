@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
     languages: {
-      "en-US": "/",
+      "pl-PL": "/",
     },
   },
   openGraph: {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
         alt: fjord.site_description,
       },
     ],
-    locale: "en_US",
+    locale: "pl_PL",
     type: "website",
   },
   manifest: `${fjord.site_domain}/manifest.json`, // Must be an absolute URL

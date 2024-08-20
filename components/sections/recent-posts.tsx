@@ -12,10 +12,9 @@ export default async function RecentPosts({
 }) {
   const posts = await fetchPosts(4, 0);
 
-  // Filter out the post with the given ID and limit to three posts
   const filteredPosts = posts.data
     .filter((post: PostProps) => post.id !== excludeId)
-    .slice(0, 3);
+    .slice(0, 6);
 
   return (
     <Craft.Section>

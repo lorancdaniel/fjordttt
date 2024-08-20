@@ -1,53 +1,59 @@
 import * as Craft from "@/components/craft/layout";
 import Balancer from "react-wrap-balancer";
 import Hero from "@/components/sections/hero";
+import PostsMain from "@/components/sections/posts-main";
 
 export default function Home() {
   return (
     <Craft.Main>
       <Hero />
-
+      <PostsMain />
       <Craft.Section>
         <Craft.Container>
           <h2 className="!mt-0">
-            <Balancer>
-              Craft was created by{" "}
-              <a className="not-prose" href="https://bridger.to">
-                Bridger
-              </a>{" "}
-              and{" "}
-              <a className="not-prose" href="https://cameronyoungblood.com">
-                {" "}
-                Cameron
-              </a>{" "}
-              at <a href="https://9d8.dev">9d8</a> and{" "}
-              <a href="https://alpine.dev">Alpine Codex</a>.
-            </Balancer>
+            Dlaczego warto korzystać z portali randkowych?
           </h2>
           <p>
-            Fjord is built around the idea of a headless WordPress backend with
-            a NextJS frontend. It makes use of the WordPress REST API to fetch
-            data and NextJS to render the frontend.
+            W dzisiejszym zabieganym świecie znalezienie czasu na tradycyjne
+            randkowanie może być wyzwaniem. Dlatego właśnie portale randkowe
+            stały się tak popularne. Oferują one wygodę, szeroki wybór
+            potencjalnych partnerów i możliwość poznania kogoś bez wychodzenia z
+            domu. Darmowe portale randkowe dla singli to doskonałe rozwiązanie
+            dla osób, które chcą rozpocząć swoją przygodę z randkowaniem online
+            bez ponoszenia kosztów. Możesz przeglądać profile, nawiązywać
+            kontakty i czatować z interesującymi Cię osobami, korzystając z
+            komputera lub aplikacji mobilnej. Co więcej, masz dostęp do tysięcy
+            potencjalnych partnerów z różnych miejsc i o różnych
+            zainteresowaniach, co znacznie zwiększa Twoje szanse na znalezienie
+            tej jedynej osoby.
           </p>
-          <h3>Key Features</h3>
+          <h3>Jak wybrać odpowiedni portal randkowy?</h3>
+          <p>
+            Wybierając portal randkowy, zwróć uwagę na trzy kluczowe aspekty:
+          </p>
           <ul>
             <li>
-              Automatic Typographic styling use a modified version of{" "}
-              <a href="https://tailwindcss.com/docs/typography-plugin">
-                Tailwind Typography
-              </a>
+              <strong>Liczba aktywnych użytkowników:</strong> Im więcej osób
+              korzysta z portalu, tym większe szanse na znalezienie
+              odpowiedniego partnera.
             </li>
             <li>
-              Components and design system by{" "}
-              <a href="https://craftui.org">Craft UI</a> and{" "}
-              <a href="https://ui.shadcn.com">shadcn/ui</a>
+              <strong>Funkcjonalność:</strong> Upewnij się, że portal oferuje
+              narzędzia ułatwiające wyszukiwanie i komunikację z innymi
+              użytkownikami.
             </li>
-            <li>Cached articles and revalidation via Next JS</li>
+            <li>
+              <strong>Bezpieczeństwo:</strong> Wybieraj portale dbające o
+              ochronę danych osobowych i weryfikację użytkowników.
+            </li>
           </ul>
           <blockquote>
             <p>
-              Fjord has been a game changer for our team. We&apos;ve been able
-              to build sites faster than ever before.
+              Wybór portalu randkowego to jak wybór restauracji - szukasz
+              miejsca, które pasuje do Twojego gustu, oferuje to, czego
+              potrzebujesz i gdzie czujesz się komfortowo. Najważniejsze to
+              znaleźć takie, które pomoże Ci spotkać odpowiednich ludzi i
+              stworzyć autentyczne relacje.
             </p>
           </blockquote>
         </Craft.Container>
