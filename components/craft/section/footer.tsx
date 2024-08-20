@@ -28,7 +28,11 @@ const Footer = () => {
               <Image src={Logo} alt="Logo" width={200} height={100}></Image>
             </Link>
             <p>
-              <Balancer>text,text,text</Balancer>
+              <Balancer>
+                Portale-randkowe.com to Twój niezawodny przewodnik w świecie
+                randek online. Nasza misja to pomóc Ci znaleźć idealny portal
+                randkowy, który odpowiada Twoim potrzebom i oczekiwaniom.{" "}
+              </Balancer>
             </p>
 
             <div className="flex gap-2">
@@ -36,7 +40,7 @@ const Footer = () => {
               <Button variant="outline" asChild size="icon">
                 <Link href={x_link}>
                   <Twitter className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
-                  <span className="sr-only">Visit Twitter</span>
+                  <span className="sr-only">Odwiedź Twittera</span>
                 </Link>
               </Button>
             </div>
@@ -69,7 +73,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="text-muted-foreground block sm:hidden">
-            Code © <a href="https://9d8.dev">9d8</a>. 2023-present.
+            2024 © Portale-randkowe.com
           </p>
         </Craft.Container>
       </Craft.Section>

@@ -23,16 +23,16 @@ const fjord: FjordProps = {
 
   menu: {
     main: {
-      home: "/", // Don't Change
+      "Strona główna": "/", // Don't Change
       blog: "/posty", // default is `/posts`
-      about: "/o-nas", // you can remove this if you don't want an about page
-      contact: "/kontakt", // you can remove this if you don't want a contact page
+      "O nas": "/o-nas", // you can remove this if you don't want an about page
+      kontakt: "/kontakt", // you can remove this if you don't want a contact page
     },
     content: {
-      authors: "/posty/autorzy", // default is `/posts/authors`
-      categories: "/posty/kategorie", // default is `/posts/categories`
-      tags: "/posty/tagi", // default is `/posts/tags`
-      pages: "/all", // default is `/all`
+      autorzy: "/posty/autorzy", // default is `/posts/authors`
+      kategorie: "/posty/kategorie", // default is `/posts/categories`
+      tagi: "/posty/tagi", // default is `/posts/tags`
+      strony: "/all", // default is `/all`
     },
     legal: {
       privacy_policy: "/polityka-prywatnosci", // default is `/privacy-policy`

@@ -2,6 +2,12 @@ import * as Craft from "@/components/craft/layout";
 import Balancer from "react-wrap-balancer";
 import Hero from "@/components/sections/hero";
 import PostsMain from "@/components/sections/posts-main";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: `Darmowe Portale Randkowe: Przewodnik Online`,
+  description: `Odkryj najlepsze darmowe portale randkowe. Porównaj, wybierz i znajdź miłość online. Ekspertowe porady, ranking portali i wskazówki bezpieczeństwa.`,
+};
 
 export default function Home() {
   return (

@@ -116,16 +116,16 @@ type FjordProps = {
   dark_mode_logo?: string;
   menu: {
     main: {
-      home: string;
+      "Strona główna": string;
       blog: string;
-      about?: string;
-      contact?: string;
+      "O nas"?: string;
+      kontakt?: string;
     };
     content: {
-      authors: string;
-      categories?: string;
-      tags?: string;
-      pages: string;
+      autorzy: string;
+      kategorie?: string;
+      tagi?: string;
+      strony: string;
     };
     legal: {
       privacy_policy?: string;
