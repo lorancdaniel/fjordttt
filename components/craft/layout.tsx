@@ -15,7 +15,7 @@ const Layout = ({ children, className }: LayoutProps) => {
       lang="en"
       className={cn("antialiased scroll-smooth focus:scroll-auto", className)}
     >
-      <GoogleTagManager gtmId="G-RLL29XWKD4" />
+      <GoogleTagManager gtmId="G-7M4KBQ7D9X" />
       <body className={className}>
         <ThemeProvider
           attribute="class"
