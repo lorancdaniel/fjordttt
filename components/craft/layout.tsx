@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "./theme/theme-provider";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 // LAYOUT
 // Layout Component
@@ -14,6 +15,7 @@ const Layout = ({ children, className }: LayoutProps) => {
       lang="en"
       className={cn("antialiased scroll-smooth focus:scroll-auto", className)}
     >
+      <GoogleTagManager gtmId="G-RLL29XWKD4" />
       <body className={className}>
         <ThemeProvider
           attribute="class"
