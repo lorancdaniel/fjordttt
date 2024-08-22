@@ -7,8 +7,8 @@ import { Metadata } from "next";
 import { fetchPages } from "@/lib/data";
 
 const metadata: Metadata = {
-  title: `All Pages | ${fjord.site_name}`,
-  description: `All pages from ${fjord.site_name}. ${fjord.site_description}`,
+  title: `Wszystkie Strony | ${fjord.site_name}`,
+  description: `Wszystkie strony z ${fjord.site_name}. ${fjord.site_description}`,
 };
 
 export default async function Pages() {
@@ -20,14 +20,17 @@ export default async function Pages() {
   }
 
   if (!data) {
-    return <div>Loading...</div>;
+    return <div>Ładowanie...</div>;
   }
 
   return (
     <Craft.Main>
-      <SecondaryHero title="All Pages" subtitle={`${fjord.site_name} blog`}>
-        All pages from {fjord.site_name}. These are all the pages from your
-        WordPress.
+      <SecondaryHero
+        title="Wszystkie Strony"
+        subtitle={`Portale randkowe - przegląd`}
+      >
+        Wszystkie strony z {fjord.site_name}. Tutaj znajdziesz kompletny
+        przegląd portali randkowych, które analizujemy.
       </SecondaryHero>
 
       <Craft.Section>
@@ -45,7 +48,7 @@ export default async function Pages() {
                   }}
                 ></h3>
                 <p className="text-base opacity-75">
-                  date: {new Date(page.date).toLocaleDateString()}
+                  data: {new Date(page.date).toLocaleDateString()}
                 </p>
               </div>
               <p

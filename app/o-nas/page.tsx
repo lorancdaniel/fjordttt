@@ -7,16 +7,19 @@ import type { Metadata } from "next";
 import fjord from "@/fjord.config";
 
 export const metadata: Metadata = {
-  title: `About Us | ${fjord.site_name}`,
-  description: `Learn more about ${fjord.site_name}. ${fjord.site_description}`,
+  title: `O nas | ${fjord.site_name}`,
+  description: `Dowiedz się więcej o ${fjord.site_name}. ${fjord.site_description}`,
 };
 
 export default function Page() {
   return (
     <Craft.Main>
-      <SecondaryHero title="About us" subtitle="Learn More about Fjord">
-        Welcome to the about page. this is where you can tell your users about
-        your project.
+      <SecondaryHero
+        title="O nas"
+        subtitle="Poznaj bliżej Portale-randkowe.com"
+      >
+        Witaj na stronie o nas. Tutaj możesz dowiedzieć się więcej o naszym
+        portalu randkowym i naszej misji łączenia ludzi.
       </SecondaryHero>
       <About />
       <FAQ />

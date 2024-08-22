@@ -19,7 +19,7 @@ import { fetchTags, fetchPosts } from "@/lib/data";
 // Meta Data
 export const metadata: Metadata = {
   title: `Blog | ${fjord.site_name}`,
-  description: `Read the ${fjord.site_name} blog. ${fjord.site_description}`,
+  description: `Przeczytaj blog ${fjord.site_name}. ${fjord.site_description}`,
 };
 
 export default async function Posts({
@@ -38,9 +38,12 @@ export default async function Posts({
 
   return (
     <Craft.Main>
-      <SecondaryHero title="All Posts" subtitle={`${fjord.site_name} blog`}>
-        All posts from {fjord.site_name}. These are all the posts from your
-        WordPress.
+      <SecondaryHero
+        title="Wszystkie Artykuły"
+        subtitle={`Blog o portalach randkowych`}
+      >
+        Wszystkie artykuły z {fjord.site_name}. Tutaj znajdziesz kompleksowe
+        analizy, porównania i recenzje portali randkowych.
       </SecondaryHero>
       <Craft.Section>
         <Craft.Container>

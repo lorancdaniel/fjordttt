@@ -13,20 +13,25 @@ const About = () => {
               src={Placeholder}
               width={1920}
               height={1080}
-              alt="hero image"
+              alt="Zdjęcie szczęśliwej pary"
               placeholder="blur"
             />
           </div>
-          <h3 className="text-3xl">Fjord is a headless WordPress template</h3>
+          <h3 className="text-3xl">
+            Portale-randkowe.com - Twoja droga do miłości
+          </h3>
           <h4 className="text-xl opacity-70">
-            This is an example about section. What do you want to say about your
-            company?
+            Odkryj nowe możliwości randkowania online z naszym innowacyjnym
+            portalem
           </h4>
           <p className="font-light opacity-70 md:w-3/5 mt-6 md:mt-12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Portale-randkowe.com to miejsce, gdzie marzenia o prawdziwej miłości
+            stają się rzeczywistością. Nasza platforma łączy ludzi o podobnych
+            zainteresowaniach i wartościach, umożliwiając im nawiązanie
+            głębokich i trwałych relacji. Dzięki zaawansowanym algorytmom
+            dopasowań i przyjaznej dla użytkownika funkcjonalności, sprawiamy,
+            że znalezienie idealnego partnera jest łatwiejsze niż kiedykolwiek.
+            Dołącz do nas już dziś i rozpocznij swoją podróż ku szczęściu!
           </p>
         </div>
       </Craft.Container>

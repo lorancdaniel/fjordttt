@@ -18,17 +18,17 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const formSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters long"),
+  name: z.string().min(2, "Imię musi mieć co najmniej 2 znaki"),
   phone: z
     .string()
-    .min(10, "Phone must be at least 10 characters long")
+    .min(10, "Numer telefonu musi mieć co najmniej 10 znaków")
     .optional(),
-  email: z.string().email("Invalid email address"),
-  message: z.string().min(10, "Message must be at least 10 characters long"),
+  email: z.string().email("Nieprawidłowy adres e-mail"),
+  message: z.string().min(10, "Wiadomość musi mieć co najmniej 10 znaków"),
 });
 
-export function ContactForm() {
-  // 1. Define your form.
+export function FormularzKontaktowy() {
+  // 1. Zdefiniuj swój formularz.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -38,10 +38,10 @@ export function ContactForm() {
     },
   });
 
-  // 2. Define a submit handler.
+  // 2. Zdefiniuj obsługę wysyłania.
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
+    // Zrób coś z wartościami formularza.
+    // ✅ To będzie typowo bezpieczne i zwalidowane.
     console.log(values);
   }
 
@@ -53,9 +53,9 @@ export function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Name</FormLabel>
+              <FormLabel>Imię</FormLabel>
               <FormControl>
-                <Input placeholder="Your Name..." {...field} />
+                <Input placeholder="Twoje imię..." {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -66,9 +66,9 @@ export function ContactForm() {
           name="phone"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Phone</FormLabel>
+              <FormLabel>Telefon</FormLabel>
               <FormControl>
-                <Input placeholder="Your Phone Number..." {...field} />
+                <Input placeholder="Twój numer telefonu..." {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -79,9 +79,9 @@ export function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>E-mail</FormLabel>
               <FormControl>
-                <Input placeholder="Your Email..." {...field} />
+                <Input placeholder="Twój adres e-mail..." {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -92,21 +92,24 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel>Wiadomość</FormLabel>
               <FormControl>
-                <Textarea placeholder="How can we help you today?" {...field} />
+                <Textarea
+                  placeholder="W czym możemy Ci dzisiaj pomóc?"
+                  {...field}
+                />
               </FormControl>
               <FormDescription>
-                Our Team will get back to you within 48 hours.
+                Nasz zespół odpowie w ciągu 48 godzin.
               </FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <Button type="submit">Wyślij</Button>
       </form>
     </Form>
   );
 }
 
-export default ContactForm;
+export default FormularzKontaktowy;

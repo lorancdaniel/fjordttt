@@ -5,10 +5,11 @@ const CTA = () => {
   return (
     <Craft.Section className="border-t">
       <Craft.Container>
-        <h3 className="!mt-0">Try Fjord out for yourself!</h3>
+        <h3 className="!mt-0">Zapisz się do naszego newslettera!</h3>
         <p>
-          Reach out to learn more about Fjord from the developers. See how Fjord
-          can be the perfect starter for your next website.
+          Bądź na bieżąco z najnowszymi trendami w świecie randek online.
+          Otrzymuj ekskluzywne recenzje, porównania i porady prosto na swoją
+          skrzynkę mailową.
         </p>
         <CTAForm />
       </Craft.Container>
