@@ -13,17 +13,17 @@ type TestimonialsText = {
 const testimonialsText: TestimonialsText[] = [
   {
     logo: Logo,
-    name: "Amanda Smith",
-    title: "Developer at Jade",
+    name: "Anna Kowalska",
+    title: "Użytkowniczka MatchMaker",
     quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Dzięki rankingom na tej stronie znalazłam idealny portal randkowy dla siebie. Poznałam wspaniałego mężczyznę i jesteśmy razem już od roku. Polecam wszystkim singlom!",
   },
   {
     logo: Logo,
-    name: "Andrew Williams",
-    title: "Founder at Emerald",
+    name: "Piotr Nowak",
+    title: "Użytkownik LoveConnect",
     quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Porównanie różnych portali randkowych na tej stronie pomogło mi wybrać najlepszą opcję. Zaoszczędziłem czas i pieniądze, a co najważniejsze - znalazłem miłość swojego życia.",
   },
 ];
 
@@ -32,10 +32,9 @@ const Testimonials = () => {
     <Craft.Section>
       <Craft.Container>
         <div className="flex flex-col gap-6">
-          <h3 className="text-4xl">Don&apos;t just take our word for it.</h3>
+          <h3 className="text-4xl">Historie sukcesu naszych czytelników</h3>
           <h4 className="text-2xl font-thin opacity-70">
-            Find out why so many trust {fjord.site_name} for their headless
-            WordPress setup.
+            Zobacz, jak {fjord.site_name} pomaga singlom znaleźć miłość online
           </h4>
 
           <div className="grid md:grid-cols-2 mt-6 gap-6 md:mt-12">

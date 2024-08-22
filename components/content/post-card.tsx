@@ -18,7 +18,7 @@ const PostCard = ({ post, tags = [] }: PostCardProps) => {
   return (
     <Link
       id="post-card"
-      href={`/posts/${post.slug}`}
+      href={`/analizy/${post.slug}`}
       className="group flex flex-col not-prose gap-2 transition-all hover:-mt-1 hover:mb-1"
       key={post.id}
     >
@@ -31,7 +31,7 @@ const PostCard = ({ post, tags = [] }: PostCardProps) => {
             className="absolute left-0 top-0 h-full w-full object-cover"
           />
           <div className="absolute top-2 right-2 hidden items-center text-sm transition-all group-hover:flex rounded-sm">
-            <p className="sr-only">Read More</p>
+            <p className="sr-only">Czytaj więcej</p>
             <ArrowTopRightIcon className="w-5 h-5" />
           </div>
         </div>
@@ -51,7 +51,7 @@ const PostCard = ({ post, tags = [] }: PostCardProps) => {
 
       <div className="flex flex-wrap gap-1">
         {tags
-          .filter((tag: TagProps) => tag.name.toLowerCase() !== "uncategorized")
+          .filter((tag: TagProps) => tag.name.toLowerCase() !== "bez kategorii")
           .map((tag: TagProps) => (
             <PostTag key={tag.id} {...tag} />
           ))}

@@ -2,7 +2,7 @@
 import * as Craft from "@/components/craft/layout";
 
 // Icons
-import { TokensIcon } from "@radix-ui/react-icons";
+import { HeartIcon } from "@radix-ui/react-icons";
 
 type FeatureText = {
   icon: JSX.Element;
@@ -12,22 +12,22 @@ type FeatureText = {
 
 const featureText: FeatureText[] = [
   {
-    icon: <TokensIcon className="w-6 h-6" />,
-    title: "One-click Deploy",
+    icon: <HeartIcon className="w-6 h-6" />,
+    title: "Inteligentne dopasowania",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Nasze zaawansowane algorytmy analizują profile użytkowników, aby znaleźć najbardziej kompatybilne pary. Zwiększ swoje szanse na znalezienie idealnego partnera.",
   },
   {
-    icon: <TokensIcon className="w-6 h-6" />,
-    title: "Simple Config File",
+    icon: <HeartIcon className="w-6 h-6" />,
+    title: "Bezpieczeństwo i prywatność",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Dbamy o Twoją prywatność. Wszystkie portale randkowe w naszym rankingu są weryfikowane pod kątem bezpieczeństwa danych i ochrony użytkowników.",
   },
   {
-    icon: <TokensIcon className="w-6 h-6" />,
-    title: "Design with Ease",
+    icon: <HeartIcon className="w-6 h-6" />,
+    title: "Różnorodność opcji",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Od szybkich randek online po długoterminowe związki - prezentujemy portale randkowe dla każdego typu relacji i preferencji.",
   },
 ];
 
@@ -37,10 +37,11 @@ const Feature = () => {
       <Craft.Container>
         <div className="flex flex-col gap-6">
           <h3 className="text-4xl">
-            What if Headless WordPress was as easy as 1, 2, 3?
+            Czy znalezienie miłości online może być tak proste jak 1, 2, 3?
           </h3>
           <h4 className="text-2xl font-thin opacity-70">
-            Fjord was designed with the developer experience in mind.
+            Nasz ranking portali randkowych został stworzony, aby ułatwić Ci
+            znalezienie idealnego miejsca do poznania drugiej połówki.
           </h4>
 
           <div className="grid md:grid-cols-3 mt-6 gap-6 md:mt-12">
