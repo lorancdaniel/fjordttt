@@ -46,15 +46,15 @@ export default async function Page({
   const lastPage = Math.ceil(totalPosts / fjord.posts_per_page);
 
   const metadata: Metadata = {
-    title: `All Articles by ${author?.name} | ${fjord.site_name}`,
-    description: `The latest articles from ${author?.name} on ${fjord.site_name}.`,
+    title: `Wszystkie Artykuły ${author?.name} | ${fjord.site_name}`,
+    description: `Najnowsze analizy portali randkowych od ${author?.name} na ${fjord.site_name}.`,
   };
 
   return (
     <Craft.Main>
       <SecondaryHero
-        title={`All Articles by ${author?.name}`}
-        subtitle={`The latest from ${fjord.site_name}`}
+        title={`Wszystkie artykuły użytkownika: ${author?.name}`}
+        subtitle={`Najnowsze analizy z ${fjord.site_name}`}
       >
         {author?.description}
       </SecondaryHero>

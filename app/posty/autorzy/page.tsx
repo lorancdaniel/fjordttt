@@ -15,8 +15,8 @@ import Image from "next/image";
 import { fetchAuthors } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: `Authors | ${fjord.site_name}`,
-  description: `Meet the authors of ${fjord.site_name}. ${fjord.site_description}`,
+  title: `Eksperci | ${fjord.site_name}`,
+  description: `Poznaj ekspertów ${fjord.site_name}. ${fjord.site_description}`,
 };
 
 export default async function AuthorPosts() {
@@ -25,10 +25,10 @@ export default async function AuthorPosts() {
   return (
     <Craft.Main>
       <SecondaryHero
-        title={`${fjord.site_name} Authors`}
-        subtitle="Our Writers and Authors"
+        title={`Eksperci ${fjord.site_name}`}
+        subtitle="Nasi Specjaliści od Portali Randkowych"
       >
-        Select an Author below to see a list of their posts.
+        Wybierz eksperta poniżej, aby zobaczyć listę jego artykułów i analiz.
       </SecondaryHero>
 
       <Craft.Section>
@@ -38,7 +38,7 @@ export default async function AuthorPosts() {
               <div key={author.id}>
                 <Link
                   className="flex items-center h-full gap-4 rounded-lg md:rounded-xl border bg-background hover:bg-secondary transition-all p-6"
-                  href={`./authors/${author.slug}`}
+                  href={`./autorzy/${author.slug}`}
                 >
                   {/* eslint-disable-next-line */}
                   <img
