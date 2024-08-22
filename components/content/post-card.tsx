@@ -18,7 +18,7 @@ const PostCard = ({ post, tags = [] }: PostCardProps) => {
   return (
     <Link
       id="post-card"
-      href={`/analizy/${post.slug}`}
+      href={`/posty/${post.slug}`}
       className="group flex flex-col not-prose gap-2 transition-all hover:-mt-1 hover:mb-1"
       key={post.id}
     >
