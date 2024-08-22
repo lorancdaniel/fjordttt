@@ -15,33 +15,38 @@ const pages: PageProps[] = [
     id: 1,
     title: "Darmowe portale randkowe",
     url: "/darmowe-portale-randkowe",
-    image: "/hero.webp",
+    image: "/darmowe-portale-randkowe.webp",
   },
   {
     id: 2,
     title: "Ranking portali randkowych",
     url: "/ranking-portali-randkowych",
-    image: "/hero.webp",
+    image: "/ranking-portali-randkowych.webp",
   },
   {
     id: 3,
     title: "Ranking darmowych serwisów randkowych",
     url: "/ranking-darmowych-serwisow-randkowych",
-    image: "/hero.webp",
+    image: "/ranking-darmowych-serwisow-randkowych.webp",
   },
   {
     id: 4,
     title: "Portale randkowe dla dorosłych",
     url: "/portale-randkowe-dla-doroslych",
-    image: "/hero.webp",
+    image: "/portale-randkowe-dla-doroslych.webp",
   },
   {
     id: 5,
     title: "Serwisy randkowe - opinie",
     url: "/serwisy-randkowe-opinie",
-    image: "/hero.webp",
+    image: "/serwisy-randkowe-opinie.webp",
   },
-  { id: 6, title: "Wszystkie posty", url: "/posts", image: "/hero.webp" },
+  {
+    id: 6,
+    title: "Wszystkie posty",
+    url: "/posts",
+    image: "/wszystkie-posty.webp",
+  },
 ];
 
 export default function PagesGrid({ className }: { className?: string }) {
