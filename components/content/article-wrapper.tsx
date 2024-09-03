@@ -2,6 +2,7 @@
 // Next Imports
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 // Component Imports
 import * as Craft from "@/components/craft/layout";
@@ -23,15 +24,16 @@ const Article = ({ post, date, author }: ArticleProps) => {
           const idMatch = heading.match(/id="([^"]+)"/);
           const textMatch = heading.match(/>([^<]+)<\/h[1-6]>/);
 
-          // Sprawdzamy, czy idMatch i textMatch nie są null
           if (idMatch && textMatch) {
             const id = idMatch[1];
             const text = textMatch[1];
             return { id, text };
           }
-          return null; // Zwracamy null, jeśli nie znaleziono
+          return null;
         })
-        .filter((heading) => heading !== null) || []; // Filtrujemy null
+        .filter(
+          (heading): heading is { id: string; text: string } => heading !== null
+        ) || [];
 
     // Ustaw nagłówki w stanie
     setHeadings(extractedHeadings);
@@ -73,14 +75,12 @@ const Article = ({ post, date, author }: ArticleProps) => {
               post._embedded["wp:featuredmedia"][0]?.media_details?.sizes?.full
                 ?.source_url && (
                 <div className="relative my-12 h-96 w-full md:h-[500px]">
-                  <img
-                    placeholder="blur"
-                    className="absolute left-0 top-0 h-full w-full object-cover rounded-lg"
-                    src={
-                      post._embedded["wp:featuredmedia"][0].media_details.sizes
-                        .full.source_url
-                    }
-                    alt="Post image"
+                  <Image
+                    src={author?.avatar_urls?.["96"] || "/default-avatar.png"}
+                    alt={author?.name || "Autor"}
+                    width={96}
+                    height={96}
+                    className="rounded-full"
                   />
                 </div>
               )}
