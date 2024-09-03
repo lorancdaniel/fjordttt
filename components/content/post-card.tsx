@@ -28,7 +28,7 @@ const PostCard = ({ post, tags = [] }: PostCardProps) => {
           <img
             src={featuredMedia}
             alt={post.title.rendered}
-            className="absolute left-0 top-0 h-full w-full object-cover"
+            className="absolute left-0 top-0 h-full w-full object-cover rounded-lg shadow-md transition-transform duration-300 transform group-hover:scale-105"
           />
           <div className="absolute top-2 right-2 hidden items-center text-sm transition-all group-hover:flex rounded-sm">
             <p className="sr-only">Czytaj więcej</p>
